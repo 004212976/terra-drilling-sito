@@ -10,6 +10,11 @@
 
   gtag('config', 'G-0BRFQGHXYL');
 </script>
+
+<!-- GoatCounter (simple visitor counter) -->
+<script data-goatcounter="https://terradrilling.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Terra Drilling Technology S.r.l. — Indagini geognostiche, geofisiche e geotecniche. Pescara, Abruzzo. Preventivi gratuiti.">
@@ -67,7 +72,7 @@ nav a.active{color:var(--gold2)}
 .btn-lg{padding:15px 32px;font-size:14px;letter-spacing:2.5px}
 
 /* HAMBURGER */
-.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;margin-left:auto}
 .ham span{display:block;width:24px;height:2px;background:var(--gold2);transition:all .3s}
 .mob-menu{display:none;position:fixed;top:68px;left:0;right:0;background:#0a1632;border-bottom:2px solid var(--gold);z-index:999;padding:20px;flex-direction:column;gap:4px}
 .mob-menu a{color:#e8e8e8;padding:12px 16px;font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.05)}
@@ -340,6 +345,13 @@ footer{background:#040d18;border-top:1px solid rgba(160,120,32,.2);padding:40px 
 /* =========================================================
    RESPONSIVE
    ========================================================= */
+@media(max-width:1650px){
+  .nav-cta{display:none}
+}
+@media(max-width:1300px){
+  nav{display:none}
+  .ham{display:flex}
+}
 @media(max-width:900px){
   .hero-content{grid-template-columns:1fr;gap:40px}
   .hero-stats{grid-template-columns:repeat(4,1fr)}
@@ -364,6 +376,17 @@ footer{background:#040d18;border-top:1px solid rgba(160,120,32,.2);padding:40px 
   .tot-bar{flex-direction:column;gap:8px;text-align:center}
   .nav-row-form{flex-direction:column;gap:10px}
   .nav-row-form button{width:100%;text-align:center}
+  .nav-inner{gap:8px;padding:0 14px}
+  .nav-logo svg{width:42px;height:42px}
+  .nav-logo>div{padding-left:8px;margin-left:2px}
+  .nav-logo>div>div:first-child{font-size:14px!important;letter-spacing:1px!important}
+  .nav-logo>div>div:last-child{display:none}
+}
+@media(max-width:400px){
+  .nav-inner{padding:0 10px;gap:4px}
+  .nav-logo svg{width:36px;height:36px}
+  .nav-logo>div>div:first-child{font-size:12px!important}
+  .ham{padding:8px 4px}
 }
 
 /* Sede buttons */
